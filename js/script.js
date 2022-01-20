@@ -1,25 +1,19 @@
-// const obj = {
-//     name: "Jonh",
-//     age: 25,
-//     isMarried: false
-// };
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-// // console.log(obj.age);
-// console.log(obj.name);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres:[],
+    privat: false
+};
 
-// const result = confirm("Are you here?");
-// console.log(result);
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
 
-// const answer = prompt("Вам есть 18?", "да");
-// console.log(typeof(answer));
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-//const answers = [];
-
-// answers[0] = prompt('Как ваше имя?', '');
-// answers[1] = prompt('Как ваше фамилия?', '');
-// answers[2] = prompt('Сколько вам лет?', '');
-
-//console.log(typeof(answers));
-const category = 'toys';
-
-// console.log(`https://someurl.com/${category}/5`);
+console.log(personalMovieDB);
